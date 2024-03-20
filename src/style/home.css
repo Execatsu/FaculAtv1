@@ -1,0 +1,116 @@
+html {
+    --title1-color: #fff;
+    --a1-color: #000;
+    --a1-color-h: #f00;
+
+    --header-bg: #a0a0a0;
+    --main-bg: #e0e0e0;
+    --footer-bg: #00000050;
+    --sections-bg: #f0f0f0;
+    --section-item-bg: #f0f0f0;
+
+    --section-item-img-size: 200px;
+
+    --general-font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: var(--general-font);
+}
+
+.header {
+    background: var(--header-bg);
+    color: var(--title1-color);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.main {
+    background: var(--main-bg);
+    padding: 1.5rem;
+}
+
+.footer {
+    background: var(--footer-bg);
+    padding: 7px;
+}
+
+.sections {
+    background: var(--sections-bg);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid rgb(145, 145, 145);
+    box-shadow: rgb(145, 145, 145) -3px 3px, rgba(145, 145, 145, 0.3) -6px 6px, rgba(145, 145, 145, 0.2) -9px 9px, rgba(145, 145, 145, 0.1) -12px 12px, rgba(145, 145, 145, 0.05) -15px 15px;
+}
+
+.section-item {
+    background: var(--section-item-bg);
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(70, 70, 70, 0.2) 0px 7px 29px 0px;
+   
+}
+
+
+.section-item-container {
+    padding: .7rem;
+}
+
+.section-item-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.section-item-imgBox {
+    max-width: var(--section-item-img-size);
+    min-width: var(--section-item-img-size);
+    height: var(--section-item-img-size);
+    border-right: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-item-img {
+    size: 100%;
+    height: 100%;
+}
+
+.credits {
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+}
+
+.credits a {
+    color: var(--span1-color);
+    text-decoration: none;
+    font-size: .7rem;
+}
+
+.credits a:hover {
+    color: var(--a1-color-h);
+}
+
+.rgb {
+    box-shadow: rgb(255, 0, 0) -3px 3px, 
+        rgba(255, 208, 0, 0.3) -6px 6px, 
+        rgba(0, 255, 213, 0.2) -9px 9px, 
+        rgba(25, 0, 255, 0.1) -12px 12px, 
+        rgba(247, 0, 255, 0.05) -15px 15px !important;
+}
